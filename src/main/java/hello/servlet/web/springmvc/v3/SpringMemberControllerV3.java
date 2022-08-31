@@ -30,6 +30,11 @@ public class SpringMemberControllerV3 {
         return "save-result";
     }
 
+    @GetMapping("test")
+    public void test(){
+
+    }
+
     @GetMapping
     public String members(Model model) {
         List<Member> members = memberRepository.findAll();
